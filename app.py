@@ -22,7 +22,7 @@ def index():
     return render_template('main.html')  # Or any default page you want
 
 @app.route('/Login')
-def login():
+def Login():
     return render_template('Login.html')
 
 @app.route('/content')
@@ -50,7 +50,7 @@ def blaze_details():
     return render_template('blaze_details.html')
 
 @app.route('/nitrotech_details')
-def nitr_details():
+def nitrotech_details():
     return render_template('nitrotech_details.html')
 
 @app.route('/on_details')
