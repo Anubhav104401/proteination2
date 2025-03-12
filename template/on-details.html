@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ON Gold Standard Whey</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .product-details {
+            max-width: 900px;
+            background: #fff;
+            color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-details img {
+            display: block;
+            margin: 0 auto 20px;
+            max-width: 300px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-details h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .product-details p {
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        .product-details .price {
+            font-size: 1.5em;
+            margin: 20px 0;
+            color: #e63946;
+            text-align: center;
+        }
+
+        .product-details .btn {
+            display: block;
+            width: fit-content;
+            margin: 0 auto;
+            background: #28a745;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        .product-details .btn:hover {
+            background: #155724;
+        }
+    </style>
+</head>
+<body>
+    <div class="product-details">
+        <img src="{{ url_for('static', filename='ON.webp') }}" alt="ON Gold Standard Whey">
+        <h1>ON Gold Standard Whey</h1>
+        <p>Optimum Nutrition's Gold Standard Whey is the world’s most trusted and consumed whey protein supplement. Each serving provides 24 grams of premium whey protein, 5.5 grams of BCAAs, and 4 grams of glutamine to support muscle recovery and growth after intense training sessions.</p>
+        <p>This product is designed for athletes, fitness enthusiasts, and bodybuilders who demand top-quality protein. It is instantized for easy mixing and digestion, making it ideal for consumption any time during the day, especially post-workout.</p>
+        <p>Available in multiple delicious flavors, ON Gold Standard Whey ensures consistency and satisfaction with every scoop.</p>
+        <p class="price">Price: Rs. 2899</p>
+        <a href="#" class="btn">Add to Cart</a>
+    </div>
+</body>
+</html>

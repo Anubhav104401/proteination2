@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muscletech Nitrotech Gold Whey</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .product-details {
+            max-width: 900px;
+            background: #fff;
+            color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-details img {
+            display: block;
+            margin: 0 auto 20px;
+            max-width: 300px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-details h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .product-details p {
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        .product-details .price {
+            font-size: 1.5em;
+            margin: 20px 0;
+            color: #e63946;
+            text-align: center;
+        }
+
+        .product-details .btn {
+            display: block;
+            width: fit-content;
+            margin: 0 auto;
+            background: #28a745;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        .product-details .btn:hover {
+            background: #155724;
+        }
+    </style>
+</head>
+<body>
+    <div class="product-details">
+        <img src="{{ url_for('static', filename='Nitro.png') }}" alt="Muscletech Nitrotech Gold Whey">
+        <h1>Muscletech Nitrotech Gold Whey</h1>
+        <p>Muscletech Nitrotech Gold Whey is a premium-quality protein supplement formulated for serious athletes and bodybuilders. It is fortified with scientifically researched ingredients for muscle recovery, strength, and endurance.</p>
+        <p>Each serving delivers 30 grams of high-quality protein, sourced from whey peptides and isolate, along with 3 grams of creatine to support lean muscle development. The protein blend is designed to enhance recovery and performance after strenuous workouts.</p>
+        <p>This protein powder is free of banned substances and uses multi-phase filtration technology to minimize fat, lactose, and impurities for a cleaner formula.</p>
+        <p class="price">Price: Rs. 5999</p>
+        <a href="#" class="btn">Add to Cart</a>
+    </div>
+</body>
+</html>

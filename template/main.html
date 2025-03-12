@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protein Nation</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="{{ url_for('static', filename='test2.js') }}" defer></script>
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+</head>
+<body>
+    <header id="main-header">
+        <h1>Welcome to Protein Nation</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('products') }}" target="main" data-color="green">Products</a></li>
+            <li><a href="{{ url_for('about') }}" target="main" data-color="green">About Us</a></li>
+            <li><a href="{{ url_for('contact') }}" target="main" data-color="green">Contact Us</a></li>
+            <li><a href="{{ url_for('cart') }}" target="main">Cart 🛒</a></li>
+        </ul>
+    </nav>
+    <main>
+        <iframe src="{{ url_for('content') }}" name="main" frameborder="0">
+            Your browser does not support iframes.
+        </iframe>
+    </main>
+    <footer>
+        <button id="logout-btn">Logout/Back to login page</button>
+        <p>&copy; 2024 Protein Nation. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

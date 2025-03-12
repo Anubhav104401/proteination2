@@ -1,0 +1,88 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #155724, #28a745);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.products-container {
+    max-width: 1000px;
+    background: #fff;
+    color: #333;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 90%;
+}
+
+/* Header */
+.products-container h1 {
+    color: #28a745;
+    margin-bottom: 10px;
+}
+
+.products-container p {
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Table Styles */
+.products-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.products-table thead tr {
+    background: #28a745;
+    color: white;
+}
+
+.products-table th, .products-table td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.products-table tbody tr:nth-child(odd) {
+    background: #f9f9f9;
+}
+
+.products-table tbody tr:nth-child(even) {
+    background: #fff;
+}
+
+.products-table tbody tr:hover {
+    background: #f1f1f1;
+}
+
+/* Product Images */
+.products-table img {
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Styles */
+.btn {
+    background: #28a745;
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background: #155724;
+    color: #fff;
+}

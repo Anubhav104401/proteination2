@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sidebar</title>
+</head>
+<body bgcolor="#d9e4f5">
+    <h3>Navigation</h3>
+    <ul>
+        <li><a href="{{ url_for('login') }}" target="main">Login</a></li>
+        <li><a href="{{ url_for('content') }}" target="main">Home</a></li>
+        <li><a href="{{ url_for('products') }}" target="main" data-color="green">Products</a></li>
+        <li><a href="{{ url_for('about') }}" target="main" data-color="green">About Us</a></li>
+        <li><a href="{{ url_for('contact') }}" target="main" data-color="green">Contact Us</a></li>
+        <li><a href="{{ url_for('cart') }}" target="main">Cart 🛒</a></li>
+    </ul>
+</body>
+</html>
