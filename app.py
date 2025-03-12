@@ -22,9 +22,9 @@ app.config['SECRET_KEY'] = os.getenv("SECRET_KEY")  # Use a strong secret key
 def index():
     return render_template('main.html')  # Or any default page you want
 
-@app.route('/Login')
-def Login():
-    return render_template('Login.html')
+@app.route('/login')
+def login():
+    return render_template('login.html')
 
 @app.route('/content')
 def content():
