@@ -25,9 +25,9 @@ def index():
 def home():
     return render_template('main.html')  # Serve the file directly from the same directory
 
-@app.route('/login')
+@app.route('/Login')
 def login():
-    return render_template('login.html')
+    return render_template('Login.html')
 
 @app.route('/content')
 def content():
@@ -48,6 +48,26 @@ def contact():
 @app.route('/cart')
 def cart():
     return render_template('cart.html')
+
+@app.route('/blaze-details')
+def blaze_details():
+    return render_template('blaze-details.html')
+
+@app.route('/nitrotech-details')
+def nitr_details():
+    return render_template('nitrotech-details.html')
+
+@app.route('/on-details')
+def on_details():
+    return render_template('on-details.html')
+
+@app.route('/forgot.html')
+def forgot():
+    return render_template('forgot.html')
+
+@app.route('/Register')
+def Register():
+    return render_template('Register.html')
 
 # MongoDB Connection
 MONGO_URI = os.getenv("MONGO_URI")
@@ -210,5 +230,9 @@ def clear_cart():
 
 
 if __name__ == '__main__':
+    print(app.url_map)
     app.run(debug=True)
+
+
+
 
