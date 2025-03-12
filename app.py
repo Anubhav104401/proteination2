@@ -10,6 +10,7 @@ from functools import wraps  # Required for decorators
 from dotenv import load_dotenv
 from flask import Flask, send_file
 from flask import Flask, render_template
+from flask import Flask, send_from_directory
 
 load_dotenv()
 
