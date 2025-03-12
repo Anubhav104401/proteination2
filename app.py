@@ -45,17 +45,17 @@ def contact():
 def cart():
     return render_template('cart.html')
 
-@app.route('/blaze-details')
+@app.route('/blaze_details')
 def blaze_details():
-    return render_template('blaze-details.html')
+    return render_template('blaze_details.html')
 
-@app.route('/nitrotech-details')
+@app.route('/nitrotech_details')
 def nitr_details():
-    return render_template('nitrotech-details.html')
+    return render_template('nitrotech_details.html')
 
-@app.route('/on-details')
+@app.route('/on_details')
 def on_details():
-    return render_template('on-details.html')
+    return render_template('on_details.html')
 
 @app.route('/forgot.html')
 def forgot():
